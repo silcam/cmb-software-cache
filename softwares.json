@@ -22,17 +22,17 @@
     {
         "title": "Bloom",
         "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom.",
-        "downloadPage": "https://bloomlibrary.org/installers"
+        "downloadPage": "https://bloomlibrary.org/channels/DownloadPointers_Release.htm"
     },
     {
         "title": "Keyman",
         "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.",
         "downloadPage": "https://keyman.com/desktop/download.php",
         "downloadLinkPattern": "<div class=\"download-cta-big[^>]+?>",
-        "downloadPathPattern": "data-url=\"([^\"]+exe)\""
+        "downloadPathPattern": "data-url='([^\"]+exe)'"
     },
     {
-        "title": "Paratext 8",
+        "title": "Paratext",
         "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.",
         "downloadPage": "https://pt8.paratext.org/download/currentversion/"
     },

@@ -62,14 +62,15 @@ function updateAndGetDownloadConfig(downloads, software) {
 
 // Find a tag matching the tag pattern with a reference matching the path pattern
 function findDownloadPath(software, html) {
-  const tagPattern = software.downloadLinkPathPattern
-    ? new RegExp(software.downloadLinkPathPattern, "g")
+  const tagPattern = software.downloadLinkPattern
+    ? new RegExp(software.downloadLinkPattern, "g")
     : /<a[^>]+?>/g;
   const pathPattern = software.downloadPathPattern
     ? new RegExp(software.downloadPathPattern)
-    : /href=['"]([^'"]+(.msi)|(.exe))['"]/;
+    : /href=['"]([^'"]+(msi|exe))['"]/;
   let tagMatch;
   while ((tagMatch = tagPattern.exec(html))) {
+    // console.log(`    ${software.title} - Link: ${tagMatch[0]}`); // Debug code
     const pathMatch = pathPattern.exec(tagMatch[0]);
     if (pathMatch) return pathMatch[1];
   }

@@ -17,6 +17,10 @@ div#content div {
     padding-bottom: 16px;
 }
 
+div#content div:last-child {
+    border-bottom: none;
+}
+
 h1 {
     background-color: rgb(10, 82, 148);
     color: white;
