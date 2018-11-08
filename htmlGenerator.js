@@ -3,6 +3,7 @@ const fs = require("fs");
 function htmlGenerator() {
   console.log("Generating HTML...");
   const downloads = JSON.parse(fs.readFileSync("downloads.json"));
+  const lastUpdate = fs.statSync("downloads.json").mtime.toString();
   let html = "";
 
   html = `<html>
@@ -12,7 +13,8 @@ function htmlGenerator() {
       </head>
       <body>
         <div id="content">
-          <h1>SIL CMB Software Downloads</h1>`;
+          <h1>SIL CMB Software Downloads</h1>
+          <p class="last-update">Updated ${lastUpdate}</p>`;
 
   const titles = Object.keys(downloads).sort();
   for (let i = 0; i < titles.length; ++i) {
