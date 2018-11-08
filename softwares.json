@@ -45,5 +45,9 @@
         "title": "Hear This",
         "description": "Bible recording made easy! HearThis provides a do-it-yourself alternative for communities wanting to get translated scripture text into their own language.",
         "downloadPage": "https://software.sil.org/hearthis/download/"
+    },
+    {
+        "title": "FLEx",
+        "description": "Enables linguists to be highly productive when building a lexicon and interlinearizing texts. Powerful bulk editing tools can save hours of work. FLEx allows control of which fields and entries show up in a dictionary publication. Through Pathway, beautiful dictionaries can be exported easily. Send/Receive Project allows users to collaborate with colleagues located anywhere."
     }
 ]
