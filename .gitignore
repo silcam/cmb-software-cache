@@ -1,3 +1,4 @@
 node_modules
 downloads.json
-downloads
+public/downloads
+public/index.html

@@ -1,7 +1,49 @@
 [
     {
         "title": "Glyssen",
-        "description": "Glyssen helps you to produce a high-quality dramatized audio recording of Scripture. It’s like having a production assistant, guiding you step by step. It quickly identifies all the direct speech in the text and the biblical character who speaks each part. Then it walks you through the process of selecting a cast and assigning roles to the voice actors. Finally, it prepares a complete set of scripts to use in the recording process. It gives you the option to accept default recommendations or customize settings to better fit your project requirements.",
+        "description": "Helps you produce a high-quality dramatized audio recording of Scripture.",
         "downloadPage": "https://software.sil.org/glyssen/download/"
+    },
+    {
+        "title": "Scripture App Builder",
+        "description": "Helps you build customized Scripture apps for Android smartphones and tablets. You specify the Scripture files to use, the app name, the fonts, the colors, the audio and the icon. Scripture App Builder will package everything together and build the app for you.",
+        "downloadPage": "https://software.sil.org/scriptureappbuilder/download/"
+    },
+    {
+        "title": "Reading App Builder",
+        "description": "Helps you build customized apps for smartphones and tablets.",
+        "downloadPage": "https://software.sil.org/readingappbuilder/download/"
+    },
+    {
+        "title": "Dictionary App Builder",
+        "description": "Helps you to build customized dictionary apps for Android smartphones and tablets. You specify the lexicon data file to use, the app name, fonts, colors, the audio, illustrations and the icon.",
+        "downloadPage": "https://software.sil.org/dictionaryappbuilder/download/"
+    },
+    {
+        "title": "Bloom",
+        "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom.",
+        "downloadPage": "https://bloomlibrary.org/installers"
+    },
+    {
+        "title": "Keyman",
+        "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.",
+        "downloadPage": "https://keyman.com/desktop/download.php",
+        "downloadLinkPattern": "<div class=\"download-cta-big[^>]+?>",
+        "downloadPathPattern": "data-url=\"([^\"]+exe)\""
+    },
+    {
+        "title": "Paratext 8",
+        "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.",
+        "downloadPage": "https://pt8.paratext.org/download/currentversion/"
+    },
+    {
+        "title": "Saymore",
+        "description": "Recording speakers of the world’s languages is fun and rewarding, but keeping all the resulting files and meta data organized? Converting files to archive formats? Transcription? Painful. That's why we built SayMore – to make common Language Documentation tasks fun and to keep you productive.",
+        "downloadPage": "https://software.sil.org/saymore/download/"
+    },
+    {
+        "title": "Hear This",
+        "description": "Bible recording made easy! HearThis provides a do-it-yourself alternative for communities wanting to get translated scripture text into their own language.",
+        "downloadPage": "https://software.sil.org/hearthis/download/"
     }
 ]

@@ -1,0 +1,53 @@
+body {
+    font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+div#content {
+    margin: 20px;
+    padding: 20px 0 40px 0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+div#content div {
+    margin: 0px 8px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding-bottom: 16px;
+}
+
+h1 {
+    background-color: rgb(10, 82, 148);
+    color: white;
+    font-weight: 800;
+    padding: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+h2 {
+    color: rgb(10, 82, 148);
+    margin-bottom: 4px;
+}
+
+p {
+    margin-top: 0;
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+
+p.error {
+    font-size: 10px;
+    color: #dc3545;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+a.download-button {
+    background-color: rgb(10, 82, 148);
+    padding: 6px 12px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    color: white;
+    text-decoration: none;
+
+}
