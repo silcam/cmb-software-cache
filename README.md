@@ -49,6 +49,7 @@ If that doesn't work either, it is possible to specify an item as a special case
 - `yarn install`
 - Set a cron job to run `updater.js`
 - Add the `downloads` folder and the `old` folder inside `public`:
+- Copy `downloads-empty.json` to `downloads.json`
 ```
 public
    downloads
