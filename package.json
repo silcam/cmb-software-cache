@@ -18,8 +18,7 @@
   "homepage": "https://github.com/silcam/cmb-software-cache#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "download": "^7.1.0",
-    "express": "^4.16.4"
+    "download": "^7.1.0"
   },
   "devDependencies": {}
 }
