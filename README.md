@@ -41,10 +41,14 @@ If that doesn't work either, it is possible to specify an item as a special case
 ## Dependencies
 
 - Node
+- Yarn
 
 ## Setup
 
-In addition to cloning the repository and setting a cron job for `updater.js`, you should add the `downloads` directory to the `public` directory and an `old` directory inside `downloads`.
+- Clone the repository
+- `yarn install`
+- Set a cron job to run `updater.js`
+- Add the `downloads` folder and the `old` folder inside `public`:
 ```
 public
    downloads

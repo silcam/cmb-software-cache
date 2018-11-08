@@ -23,6 +23,7 @@ async function updateAllSoftware(softwares, downloads) {
   for (let i = 0; i < softwares.length; ++i) {
     const software = softwares[i];
     const download = updateAndGetDownloadConfig(downloads, software);
+    download.errorFlag = null;
 
     console.log(`Processing ${software.title}...`);
     try {
@@ -46,7 +47,6 @@ async function updateAllSoftware(softwares, downloads) {
 
       download.localPath = filepath;
       download.version = version;
-      download.errorFlag = null;
     } catch (error) {
       console.error(error);
       download.errorFlag = error;

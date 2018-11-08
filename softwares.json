@@ -33,7 +33,7 @@
     },
     {
         "title": "Paratext",
-        "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.",
+        "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: This is the 'Online' installer which may require internet to download other files during the install.",
         "downloadPage": "https://pt8.paratext.org/download/currentversion/"
     },
     {
