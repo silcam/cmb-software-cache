@@ -30,7 +30,10 @@ function downloadHTML(download) {
     <div>
       <h2>${download.title}</h2>`;
   if (download.errorFlag) {
-    html += `<p class="error">There was a problem updating this item. You may not be getting the latest version.</p>`;
+    html += `<p class="error" 
+                data-error-message="${download.title}: ${download.errorFlag}">
+              There was a problem updating this item. You may not be getting the latest version.
+            </p>`;
   }
   html += `
       <p>${download.description}</p>
