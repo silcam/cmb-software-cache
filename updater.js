@@ -49,7 +49,7 @@ async function updateAllSoftware(softwares, downloads) {
       download.version = version;
     } catch (error) {
       console.error(error);
-      download.errorFlag = error;
+      download.errorFlag = error.message || error;
     }
   }
 }
