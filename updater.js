@@ -61,10 +61,26 @@ function updateAndGetDownloadConfig(downloads, software) {
 }
 
 async function getHTML(url) {
-  const response = await axios.get(url, {
-    responseType: "document"
+  return await tryAFewTimes(3, async () => {
+    const response = await axios.get(url, {
+      responseType: "document"
+    });
+    return response.data;
   });
-  return response.data;
+}
+
+async function tryAFewTimes(tries, asyncFunc) {
+  let tryNumber = 0;
+  while (tryNumber < tries) {
+    try {
+      return await asyncFunc();
+    } catch (error) {
+      console.error(error);
+      tryNumber += 1;
+      if (tryNumber == tries) throw error;
+      console.error(`[tryAFewTimes] Try #${tryNumber + 1} of ${tries}...`);
+    }
+  }
 }
 
 // Find a tag matching the tag pattern with a reference matching the path pattern
