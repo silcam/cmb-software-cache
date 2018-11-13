@@ -21,6 +21,7 @@ function htmlGenerator() {
     html += downloadHTML(downloads[titles[i]]);
   }
 
+  html += `<p>Don't see what you need? Email us at <a href="mailto:programmer_cameroon@sil.org">programmer_cameroon@sil.org</a></p>`;
   html += `</content></body></html>`;
   fs.writeFileSync("public/index.html", html);
 }
@@ -28,7 +29,11 @@ function htmlGenerator() {
 function downloadHTML(download) {
   let html = `
     <div>
-      <h2>${download.title}</h2>`;
+  `;
+  if (download.icon) {
+    html += `<span class="icon"><img src="${download.icon}" /></span>`;
+  }
+  html += ` <span class="sw"><h2>${download.title}</h2>`;
   if (download.errorFlag) {
     html += `<p class="error" 
                 data-error-message="${download.title}: ${download.errorFlag}">
@@ -40,6 +45,7 @@ function downloadHTML(download) {
       <a class="download-button" href="${download.localPath}">
         Download ${download.title} ${download.version}
       </a>
+      </span>
     </div>`;
   return html;
 }
