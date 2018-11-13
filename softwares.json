@@ -1,31 +1,43 @@
 [
     {
+        "title": "Adapt It",
+        "icon": "https://adapt-it.org/wp-content/uploads/2017/02/ai-100.png",
+        "description": "Adapt It is a free open source tool for quickly translating between related languages. We seek to create, as a community, an adaptation tool that will run on all major platforms and facilitate translation of USFM, and collaboration between other translation tools such as UBS Paratext and Bibledit.",
+        "downloadPage": "https://adapt-it.org/download/"
+    },
+    {
         "title": "Glyssen",
+        "icon": "https://software.sil.org/glyssen/wp-content/uploads/sites/16/2016/05/Glyssen-Logo_80x80.png",
         "description": "Helps you produce a high-quality dramatized audio recording of Scripture.",
         "downloadPage": "https://software.sil.org/glyssen/download/"
     },
     {
         "title": "Scripture App Builder",
+        "icon": "https://software.sil.org/scriptureappbuilder/wp-content/uploads/sites/10/2016/01/SAB_80.png",
         "description": "Helps you build customized Scripture apps for Android smartphones and tablets. You specify the Scripture files to use, the app name, the fonts, the colors, the audio and the icon. Scripture App Builder will package everything together and build the app for you.",
         "downloadPage": "https://software.sil.org/scriptureappbuilder/download/"
     },
     {
         "title": "Reading App Builder",
+        "icon": "https://software.sil.org/readingappbuilder/wp-content/uploads/sites/21/2015/12/RAB_80.png",
         "description": "Helps you build customized apps for smartphones and tablets.",
         "downloadPage": "https://software.sil.org/readingappbuilder/download/"
     },
     {
         "title": "Dictionary App Builder",
+        "icon": "https://software.sil.org/dictionaryappbuilder/wp-content/uploads/sites/17/2015/12/DAB_80.png",
         "description": "Helps you to build customized dictionary apps for Android smartphones and tablets. You specify the lexicon data file to use, the app name, fonts, colors, the audio, illustrations and the icon.",
         "downloadPage": "https://software.sil.org/dictionaryappbuilder/download/"
     },
     {
         "title": "Bloom",
+        "icon": "https://bloomlibrary.org/assets/bloomNavbarLogo.svg",
         "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom.",
         "downloadPage": "https://bloomlibrary.org/channels/DownloadPointers_Release.htm"
     },
     {
         "title": "Keyman",
+        "icon": "https://keyman.com/cdn/deploy/img/icon-developer.92f73c5226b1e921aab3b0f824ea8119.png",
         "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.",
         "downloadPage": "https://keyman.com/desktop/download.php",
         "downloadLinkPattern": "<div class=\"download-cta-big[^>]+?>",
@@ -33,21 +45,25 @@
     },
     {
         "title": "Paratext",
+        "icon": "https://pt8.paratext.org/wp-content/uploads/2018/03/PT8Logo-90h.png",
         "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: This is the 'Online' installer which may require internet to download other files during the install.",
         "downloadPage": "https://pt8.paratext.org/download/currentversion/"
     },
     {
         "title": "Saymore",
+        "icon": "https://software.sil.org/saymore/wp-content/uploads/sites/48/2017/04/icon.png",
         "description": "Recording speakers of the world’s languages is fun and rewarding, but keeping all the resulting files and meta data organized? Converting files to archive formats? Transcription? Painful. That's why we built SayMore – to make common Language Documentation tasks fun and to keep you productive.",
         "downloadPage": "https://software.sil.org/saymore/download/"
     },
     {
         "title": "Hear This",
+        "icon": "https://software.sil.org/hearthis/wp-content/uploads/sites/34/2016/06/HearThis80x80.png",
         "description": "Bible recording made easy! HearThis provides a do-it-yourself alternative for communities wanting to get translated scripture text into their own language.",
         "downloadPage": "https://software.sil.org/hearthis/download/"
     },
     {
         "title": "FLEx",
+        "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
         "description": "Enables linguists to be highly productive when building a lexicon and interlinearizing texts. Powerful bulk editing tools can save hours of work. FLEx allows control of which fields and entries show up in a dictionary publication. Through Pathway, beautiful dictionaries can be exported easily. Send/Receive Project allows users to collaborate with colleagues located anywhere."
     }
 ]
