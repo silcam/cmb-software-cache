@@ -38,6 +38,10 @@ async function updateAllSoftware(softwares, downloads) {
       const version = getVersionNumber(downloadUrl);
       if (version == download.version) continue;
 
+      if (new RegExp('^/').test(downloadUrl)) {
+        downloadUrl = new URL(downloadUrl, software.downloadPage).toString();
+      }
+
       const filepath = await downloadFile(
         downloadUrl,
         newFilename(downloadUrl, version, download.localPath)
@@ -124,7 +128,7 @@ function newFilename(url, version, oldDownloadPath) {
 
 // Download from the url and save to the downloads folder
 async function downloadFile(url, filename) {
-  console.log("Downloading " + filename);
+  console.log("Downloading " + filename + " at " + url);
   await download(url, downloadsPath, { filename: filename });
   return downloadsPath + filename;
 }
