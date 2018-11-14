@@ -37,7 +37,7 @@
     },
     {
         "title": "Bloom",
-        "icon": "https://bloomlibrary.org/assets/bloomNavbarLogo.svg",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_bloom.png",
         "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom.",
         "downloadPage": "https://bloomlibrary.org/channels/DownloadPointers_Release.htm"
     },
@@ -51,7 +51,7 @@
     },
     {
         "title": "Paratext",
-        "icon": "https://pt8.paratext.org/wp-content/uploads/2018/03/PT8Logo-90h.png",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
         "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: This is the 'Online' installer which may require internet to download other files during the install.",
         "downloadPage": "https://pt8.paratext.org/download/currentversion/"
     },

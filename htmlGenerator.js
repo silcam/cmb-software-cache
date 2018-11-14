@@ -21,7 +21,7 @@ function htmlGenerator() {
     html += downloadHTML(downloads[titles[i]]);
   }
 
-  html += `<p>Don't see what you need? Email us at <a href="mailto:programmer_cameroon@sil.org">programmer_cameroon@sil.org</a></p>`;
+  html += `<p class="email-us">Don't see what you need? Email us at <a href="mailto:programmer_cameroon@sil.org">programmer_cameroon@sil.org</a></p>`;
   html += `</content></body></html>`;
   fs.writeFileSync("public/index.html", html);
 }
