@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+const downloadsPath = "/downloads/";
+
 function htmlGenerator() {
   console.log("Generating HTML...");
   const downloads = JSON.parse(fs.readFileSync("downloads.json"));
@@ -42,7 +44,7 @@ function downloadHTML(download) {
   }
   html += `
       <p>${download.description}</p>
-      <a class="download-button" href="${download.localPath}">
+      <a class="download-button" href="${downloadsPath + download.localFile}">
         Download ${download.title} ${download.version}
       </a>
       </span>

@@ -38,18 +38,16 @@ async function updateAllSoftware(softwares, downloads) {
       const version = getVersionNumber(downloadUrl);
       if (version == download.version) continue;
 
-      if (new RegExp('^/').test(downloadUrl)) {
+      if (new RegExp("^/").test(downloadUrl)) {
         downloadUrl = new URL(downloadUrl, software.downloadPage).toString();
       }
 
-      const filepath = await downloadFile(
-        downloadUrl,
-        newFilename(downloadUrl, version, download.localPath)
-      );
+      const filename = newFilename(downloadUrl, version, download.localFile);
+      await downloadFile(downloadUrl, filename);
 
-      moveOldFile(download.localPath);
+      moveOldFile(download.localFile);
 
-      download.localPath = filepath;
+      download.localFile = filename;
       download.version = version;
     } catch (error) {
       console.error(error);
@@ -117,9 +115,9 @@ function getVersionNumber(path) {
 }
 
 // Make sure the filename for the new version is different from the old
-function newFilename(url, version, oldDownloadPath) {
+function newFilename(url, version, oldDownloadFilename) {
   let filename = filenameOf(url);
-  if (oldDownloadPath && filename == filenameOf(oldDownloadPath)) {
+  if (oldDownloadFilename && filename == oldDownloadFilename) {
     const lastDot = filename.lastIndexOf(".");
     filename = filename.slice(0, lastDot) + version + filename.slice(lastDot);
   }
@@ -130,13 +128,15 @@ function newFilename(url, version, oldDownloadPath) {
 async function downloadFile(url, filename) {
   console.log("Downloading " + filename + " at " + url);
   await download(url, downloadsPath, { filename: filename });
-  return downloadsPath + filename;
 }
 
-function moveOldFile(oldFilePath) {
-  if (oldFilePath) {
-    const oldFileName = filenameOf(oldFilePath);
-    fs.rename(oldFilePath, `${downloadsPath}old/${oldFileName}`, () => {});
+function moveOldFile(oldFileName) {
+  if (oldFileName) {
+    fs.rename(
+      `${downloadsPath}/${oldFileName}`,
+      `${downloadsPath}old/${oldFileName}`,
+      () => {}
+    );
   }
 }
 
