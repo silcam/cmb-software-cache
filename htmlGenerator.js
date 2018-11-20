@@ -30,12 +30,12 @@ function htmlGenerator() {
 
 function downloadHTML(download) {
   let html = `
-    <div>
+    <div><table><tr>
   `;
   if (download.icon) {
-    html += `<span class="icon"><img src="${download.icon}" /></span>`;
+    html += `<td class="icon"><img src="${download.icon}" /></td>`;
   }
-  html += ` <span class="sw"><h2>${download.title}</h2>`;
+  html += ` <td class="sw"><h2>${download.title}</h2>`;
   if (download.errorFlag) {
     html += `<p class="error" 
                 data-error-message="${download.title}: ${download.errorFlag}">
@@ -43,11 +43,14 @@ function downloadHTML(download) {
             </p>`;
   }
   html += `
-      <p>${download.description}</p>
-      <a class="download-button" href="${downloadsPath + download.localFile}">
-        Download ${download.title} ${download.version}
-      </a>
-      </span>
+          <p>${download.description}</p>
+          <a class="download-button" href="${downloadsPath +
+            download.localFile}">
+            Download ${download.title} ${download.version}
+          </a>
+          </td>
+        </tr>
+      </table>
     </div>`;
   return html;
 }
