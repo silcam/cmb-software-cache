@@ -12,6 +12,7 @@ function htmlGenerator() {
       <head>
         <title>CMB Software Downloads</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8" />
       </head>
       <body>
         <div id="content">
@@ -40,6 +41,13 @@ function downloadHTML(download) {
     html += `<p class="error" 
                 data-error-message="${download.title}: ${download.errorFlag}">
               There was a problem updating this item. You may not be getting the latest version.
+            </p>`;
+  } else if (download.downloadingNewVersion) {
+    html += `<p class="error"
+                data-error-message="${
+                  download.title
+                }: Downloading new version...">
+              A newer version is available but has not yet finished downloading.
             </p>`;
   }
   html += `
