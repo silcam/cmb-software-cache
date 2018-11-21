@@ -1,6 +1,6 @@
 #!/bin/bash
 
-errors=$(curl http://software.cmb.sil.org/index.html | egrep -o "error-message=[^>]+")
+errors=$(curl -s http://software.cmb.sil.org/index.html | egrep -o "error-message=[^>]+")
 
 if [ -z "$errors" ]; then
     exit 0
