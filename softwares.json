@@ -6,12 +6,6 @@
         "downloadPage": "https://www.libreoffice.org/download/download/?type=win-x86_64&lang=en"
     },
     {
-        "title": "LibreOffice Version Française",
-        "description": "LibreOffice est une suite bureautique libre et gratuite.",
-        "icon": "http://freevector.co/wp-content/uploads/2011/02/23666-libreoffice-logo1.png",
-        "downloadPage": "https://www.libreoffice.org/download/download/?type=win-x86_64&lang=fr"
-    },
-    {
         "title": "Paratext",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
         "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: Install the Paratext Patch below after installing Paratext to get the latest version.",
