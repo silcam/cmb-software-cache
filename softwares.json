@@ -1,7 +1,7 @@
 [
     {
         "title": "LibreOffice",
-        "description": "LibreOffice is a powerful office suite – its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market.",
+        "description": "LibreOffice is a powerful office suite – its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market.<br><br><a href='/guides/libreoffice-fr.html'>Comment installer LibreOffice en français.</a>",
         "icon": "http://freevector.co/wp-content/uploads/2011/02/23666-libreoffice-logo1.png",
         "downloadPage": "https://www.libreoffice.org/download/download/?type=win-x86_64&lang=en"
     },

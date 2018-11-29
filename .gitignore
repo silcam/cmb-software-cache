@@ -2,3 +2,4 @@ node_modules
 downloads.json
 public/downloads
 public/index.html
+public/videos/*.m4v
