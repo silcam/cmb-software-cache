@@ -40,19 +40,19 @@
     {
         "title": "Scripture App Builder",
         "icon": "https://software.sil.org/scriptureappbuilder/wp-content/uploads/sites/10/2016/01/SAB_80.png",
-        "description": "Helps you build customized Scripture apps for Android smartphones and tablets. You specify the Scripture files to use, the app name, the fonts, the colors, the audio and the icon. Scripture App Builder will package everything together and build the app for you.",
+        "description": "Helps you build customized Scripture apps for Android smartphones and tablets. You specify the Scripture files to use, the app name, the fonts, the colors, the audio and the icon. Scripture App Builder will package everything together and build the app for you.<br /><br />Please find the dependencies on the Public (P) drive at <code>General Interest &gt; CS Installs &gt; LangTran Archive &gt; App-Builders &gt; Dependencies</code>",
         "downloadPage": "https://software.sil.org/scriptureappbuilder/download/"
     },
     {
         "title": "Reading App Builder",
         "icon": "https://software.sil.org/readingappbuilder/wp-content/uploads/sites/21/2015/12/RAB_80.png",
-        "description": "Helps you build customized apps for smartphones and tablets.",
+        "description": "Helps you build customized apps for smartphones and tablets.<br /><br />Please find the dependencies on the Public (P) drive at <code>General Interest &gt; CS Installs &gt; LangTran Archive &gt; App-Builders &gt; Dependencies</code>",
         "downloadPage": "https://software.sil.org/readingappbuilder/download/"
     },
     {
         "title": "Dictionary App Builder",
         "icon": "https://software.sil.org/dictionaryappbuilder/wp-content/uploads/sites/17/2015/12/DAB_80.png",
-        "description": "Helps you to build customized dictionary apps for Android smartphones and tablets. You specify the lexicon data file to use, the app name, fonts, colors, the audio, illustrations and the icon.",
+        "description": "Helps you to build customized dictionary apps for Android smartphones and tablets. You specify the lexicon data file to use, the app name, fonts, colors, the audio, illustrations and the icon.<br /><br />Please find the dependencies on the Public (P) drive at <code>General Interest &gt; CS Installs &gt; LangTran Archive &gt; App-Builders &gt; Dependencies</code>",
         "downloadPage": "https://software.sil.org/dictionaryappbuilder/download/"
     },
     {
@@ -85,5 +85,11 @@
         "title": "FLEx",
         "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
         "description": "Enables linguists to be highly productive when building a lexicon and interlinearizing texts. Powerful bulk editing tools can save hours of work. FLEx allows control of which fields and entries show up in a dictionary publication. Through Pathway, beautiful dictionaries can be exported easily. Send/Receive Project allows users to collaborate with colleagues located anywhere."
+    },
+    {
+        "title": "WeSay",
+        "icon": "https://software.sil.org/wesay/wp-content/uploads/sites/35/2017/04/icon_80x80.png",
+        "description": "WeSay helps non-linguists build a dictionary in their own language. It has various ways to help native speakers to think of words in their language and enter some basic data about them (no backslash codes, just forms to fill in)",
+        "downloadPage": "https://software.sil.org/wesay/download/"
     }
 ]
