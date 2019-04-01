@@ -55,7 +55,7 @@ function updateDownloadsInfoAndWebpage(downloadInfo, version, filename) {
 }
 
 function filenameOf(urlOrPath) {
-  return urlOrPath.slice(urlOrPath.lastIndexOf("/") + 1);
+  return urlOrPath.slice(urlOrPath.lastIndexOf("/") + 1).replace(/%20/g, "_");
 }
 
 module.exports = {

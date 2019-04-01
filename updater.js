@@ -97,9 +97,10 @@ function findDownloadPath(software, html) {
 // Return the longest combination of digits and decimals in the path
 function getVersionNumber(path) {
   const pattern = /\d[_.\d]+\d/g;
+  const searchText = path.replace(/%20/g, " "); // The 20 was ending up in version numbers
   let version = "";
   let match;
-  while ((match = pattern.exec(path))) {
+  while ((match = pattern.exec(searchText))) {
     if (match[0].length > version.length) version = match[0];
   }
   if (!version) throw "No version number found in download path.";
