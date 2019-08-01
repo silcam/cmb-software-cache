@@ -58,7 +58,7 @@
     {
         "title": "Bloom",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_bloom.png",
-        "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom.",
+        "description": "Learning to read takes books. Learning to read well, and developing a love of reading, takes lots of books. Books at all different skill levels. But how are low-literacy language communities ever to get all those books in their language? They can do it with Bloom. <br /><br />Please find the dependencies on the Public (P) drive at <code>General Interest &gt; CS Installs &gt; LangTran Archive &gt; Bloom</code>",
         "downloadPage": "https://bloomlibrary.org/channels/DownloadPointers_Release.htm"
     },
     {
