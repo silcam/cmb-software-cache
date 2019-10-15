@@ -1,23 +1,29 @@
 [
     {
+        "title": "Paratext 9",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
+        "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: Install the Paratext Patch below after installing Paratext to get the latest version.",
+        "downloadPage": "https://paratext.org/download/currentversion/",
+        "downloadPathPattern": "href=['\"]([^'\"]+Offline.exe)['\"]"
+    }, 
+    {
+        "title": "Paratext 8",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
+        "description": "Run this once Paratext is installed to get the latest version.",
+        "downloadPage": "https://paratext.org/download/"
+    },
+    {
+        "title": "Paratext 8 Latest Patch",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
+        "description": "Run this once Paratext is installed to get the latest version.",
+        "downloadPage": "https://paratext.org/download/",
+        "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
+    },
+    {
         "title": "LibreOffice",
         "description": "LibreOffice is a powerful office suite – its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market.<br><br><a href='/guides/libreoffice-fr.html'>Comment installer LibreOffice en français.</a>",
         "icon": "http://freevector.co/wp-content/uploads/2011/02/23666-libreoffice-logo1.png",
         "downloadPage": "https://www.libreoffice.org/download/download/?type=win-x86_64&lang=en"
-    },
-    {
-        "title": "Paratext",
-        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
-        "description": "Allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.<br /><br />NOTE: Install the Paratext Patch below after installing Paratext to get the latest version.",
-        "downloadPage": "https://pt8.paratext.org/download/currentversion/",
-        "downloadPathPattern": "href=['\"]([^'\"]+Offline.exe)['\"]"
-    },
-    {
-        "title": "Paratext Latest Patch",
-        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
-        "description": "Run this once Paratext is installed to get the latest version.",
-        "downloadPage": "https://pt8.paratext.org/download/currentversion/",
-        "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
     },
     {
         "title": "RAMP",
