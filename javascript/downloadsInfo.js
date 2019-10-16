@@ -8,11 +8,26 @@ function writeInfo(softwareTitle, info) {
   fs.writeFileSync(downloadsInfoFile, JSON.stringify(downloadsInfo));
 }
 
+function unlistOldSoftwares(softwares) {
+  const downloadsInfo = getDownloadsInfo();
+  const toRemove = [];
+  Object.keys(downloadsInfo).forEach(softwareTitle => {
+    if (!softwares.some(software => software.title === softwareTitle))
+      toRemove.push(softwareTitle);
+  });
+  toRemove.forEach(title => {
+    delete downloadsInfo[title];
+  });
+  fs.writeFileSync(downloadsInfoFile, JSON.stringify(downloadsInfo));
+  return downloadsInfo;
+}
+
 function getDownloadsInfo() {
   return JSON.parse(fs.readFileSync(downloadsInfoFile));
 }
 
 module.exports = {
-  writeInfo: writeInfo,
-  getDownloadsInfo: getDownloadsInfo
+  writeInfo,
+  getDownloadsInfo,
+  unlistOldSoftwares
 };
