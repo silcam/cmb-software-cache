@@ -70,7 +70,7 @@
     {
         "title": "Keyman",
         "icon": "https://keyman.com/cdn/deploy/img/icon-developer.92f73c5226b1e921aab3b0f824ea8119.png",
-        "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.",
+        "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.<br /><br />Note: for a completely offline install click \"Install Options\" before installing and disabled \"Check For Updates Before Install\"",
         "downloadPage": "https://keyman.com/desktop/download.php",
         "downloadLinkPattern": "<div class=\"download-cta-big[^>]+?>",
         "downloadPathPattern": "data-url='([^\"]+exe)'"
