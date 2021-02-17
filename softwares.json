@@ -93,6 +93,19 @@
         "description": "Enables linguists to be highly productive when building a lexicon and interlinearizing texts. Powerful bulk editing tools can save hours of work. FLEx allows control of which fields and entries show up in a dictionary publication. Through Pathway, beautiful dictionaries can be exported easily. Send/Receive Project allows users to collaborate with colleagues located anywhere."
     },
     {
+        "title": "FLEx 9 Latest Patch",
+        "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
+        "description": "Run this once FLEx 9 is installed to get the latest patch for FLEx 9.",
+        "downloadPage": "https://software.sil.org/fieldworks/download/fw-9011/",
+        "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
+    },
+    {
+        "title": "PTXPrint",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2020/05/62859-open-book-icon128.png",
+        "description": "Bible Layout For Everyone",
+        "downloadPage": "https://software.sil.org/ptxprint/"
+    },
+    {
         "title": "WeSay",
         "icon": "https://software.sil.org/wesay/wp-content/uploads/sites/35/2017/04/icon_80x80.png",
         "description": "WeSay helps non-linguists build a dictionary in their own language. It has various ways to help native speakers to think of words in their language and enter some basic data about them (no backslash codes, just forms to fill in)",
