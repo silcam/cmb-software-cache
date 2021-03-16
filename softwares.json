@@ -100,6 +100,12 @@
         "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
     },
     {
+        "title": "SIL Transcriber",
+        "icon": "https://software.sil.org/siltranscriber/wp-content/uploads/sites/53/2020/10/icon-square@80-1.png",
+        "description": "SIL Transcriber is a web or desktop application that simplifies the transcription of speech audio files.",
+        "downloadPage": "https://software.sil.org/siltranscriber/download/"
+    },
+    {
         "title": "PTXPrint",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2020/05/62859-open-book-icon128.png",
         "description": "Bible Layout For Everyone",
