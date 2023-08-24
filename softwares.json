@@ -91,7 +91,6 @@
         "title": "FLEx 9 Latest Patch",
         "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
         "description": "Run this once FLEx 9 is installed to get the latest patch for FLEx 9.",
-        "downloadPage": "https://software.sil.org/fieldworks/download/fw-9011/",
         "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
     },
     {
