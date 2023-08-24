@@ -23,7 +23,7 @@ async function updateAllSoftware(softwares, downloads) {
     const download = updateAndGetDownloadConfig(downloads, software);
     download.errorFlag = null;
 
-    console.log(`Processing ${software.title}...`);
+    console.log(`Processing ${software.title} at ${software.downloadPage}...`);
     try {
       let downloadUrl;
       if (specialRules.includes(software.title)) {
@@ -39,7 +39,7 @@ async function updateAllSoftware(softwares, downloads) {
       } else {
         if (new RegExp("^/").test(downloadUrl))
           downloadUrl = new URL(downloadUrl, software.downloadPage).toString();
-        downloader.updateDownload(download, downloadUrl, version);
+          downloader.updateDownload(download, downloadUrl, version);
       }
     } catch (error) {
       console.error(error);
@@ -87,7 +87,7 @@ function findDownloadPath(software, html) {
     : /href=['"]([^'"]+(msi|exe))['"]/;
   let tagMatch;
   while ((tagMatch = tagPattern.exec(html))) {
-    // console.log(`    ${software.title} - Link: ${tagMatch[0]}`); // Debug code
+    //console.log(`    ${software.title} - ( Regex: ${software.downloadPathPattern} ) Link: ${tagMatch[0]}`); // Debug code
     const pathMatch = pathPattern.exec(tagMatch[0]);
     if (pathMatch) return pathMatch[1];
   }
@@ -129,7 +129,7 @@ async function downloadUrlFlex(software) {
     downloadPageHtml
   );
   const realDownloadHtml = await getHTML(realDownloadPageUrl);
-  return await findDownloadPath({}, realDownloadHtml);
+  return await findDownloadPath(software, realDownloadHtml);
 }
 
 async function downloadUrlLibreOffice(software) {
