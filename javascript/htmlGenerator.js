@@ -17,6 +17,7 @@ function htmlGenerator() {
       <body>
         <div id="content">
           <h1>SIL CMB Software Downloads</h1>
+          <h2>For other useful apps at CMB, <a target="_new" href="http://itdocs.cmb.sil.org/index.php/Useful_Apps_at_CMB">click here.</a>
           <p class="last-update">Updated ${lastUpdate}</p>`;
 
   const titles = Object.keys(downloads).sort();
