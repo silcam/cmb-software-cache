@@ -21,7 +21,7 @@
     },
     {
         "title": "RAMP",
-        "icon": "https://ramp.sil.org/icons/build/128x128.png",
+        "icon": "https://software.sil.org/wp/wp-content/uploads/2025/03/RAMP-80px.png",
         "description": "The Resource and Metadata Packager (RAMP) is the preferred/recommended tool for describing, packaging, submitting, and managing resources archived in SIL’s Repository for Electronic Archiving and Publishing (REAP).",
         "downloadPage": "https://ramp.sil.org/"
     },
