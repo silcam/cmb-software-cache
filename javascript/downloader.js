@@ -1,5 +1,5 @@
 const fs = require("fs");
-const download = require("download");
+const { Downloader } = require('nodejs-file-downloader');
 const downloadsInfo = require("./downloadsInfo");
 const htmlGenerator = require("./htmlGenerator");
 
@@ -29,8 +29,15 @@ function newFilename(url, version, oldDownloadFilename) {
 
 // Download from the url and save to the downloads folder
 async function downloadFile(url, filename) {
-  console.log("Downloading " + filename + " at " + url);
-  await download(url, downloadsPath, { filename: filename });
+  console.log(`Downloading ${filename} at ${url}`);
+
+  const downloader = new Downloader({
+    url,
+    directory: downloadsPath,
+    fileName: filename,
+  });
+
+  await downloader.download();
 }
 
 function moveOldFile(oldFileName) {
