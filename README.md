@@ -38,6 +38,10 @@ Example entry with custom patterns:
 
 If that doesn't work either, it is possible to specify an item as a special case in `updater.js` and write custom code to get the url for the download. An example is how FLEx is handled.
 
+## Static Links
+
+In some cases, it's appropriate to add a link to another site. In that case, use the `links.json` file. Until modified, these will always appear first in the list (i.e. all links, then softwares in alpha order).
+
 ## Dependencies
 
 - Node 24

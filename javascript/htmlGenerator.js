@@ -5,6 +5,7 @@ const downloadsPath = "/downloads/";
 function htmlGenerator() {
   console.log("Generating HTML...");
   const downloads = JSON.parse(fs.readFileSync("downloads.json"));
+  const links = JSON.parse(fs.readFileSync("links.json"));
   const lastUpdate = fs.statSync("downloads.json").mtime.toString();
   let html = "";
 
@@ -17,12 +18,22 @@ function htmlGenerator() {
       <body>
         <div id="content">
           <h1>SIL CMB Software Downloads</h1>
-          <h2>For other useful apps at CMB, <a target="_new" href="http://itdocs.cmb.sil.org/index.php/Useful_Apps_at_CMB">click here.</a>
-          <p class="last-update">Updated ${lastUpdate}</p>`;
+          <p class="last-update">Updated ${lastUpdate}</p>
+          <div>
+          <h3>For other useful apps at CMB, <a target="_new" href="http://itdocs.cmb.sil.org/index.php/Useful_Apps_at_CMB">click here.</a></h3>
+          </div>`;
+
+  /* TODO: there is no try in either of these, very much assumes they
+   * are there and well-formatted. */
+  /* NB. Links will always appear first in the list, not combined
+   * alphabetically. */
+  links.forEach((item, index) => {
+    html += entryHTML(item);
+  });
 
   const titles = Object.keys(downloads).sort();
   for (let i = 0; i < titles.length; ++i) {
-    html += downloadHTML(downloads[titles[i]]);
+    html += entryHTML(downloads[titles[i]]);
   }
 
   html += `<p class="email-us">Don't see what you need? Email us at <a href="mailto:programmer_cameroon@sil.org">programmer_cameroon@sil.org</a></p>`;
@@ -30,34 +41,40 @@ function htmlGenerator() {
   fs.writeFileSync("public/index.html", html);
 }
 
-function downloadHTML(download) {
+function entryHTML(entry) {
   let html = `
     <div><table><tr>
   `;
-  if (download.icon) {
-    html += `<td class="icon"><img src="${download.icon}" /></td>`;
+  if (entry.icon) {
+    html += `<td class="icon"><img src="${entry.icon}" /></td>`;
   }
-  html += ` <td class="sw"><h2>${download.title}</h2>`;
-  if (download.errorFlag) {
+  html += ` <td class="sw"><h2>${entry.title}</h2>`;
+  if (entry.errorFlag) {
     html += `<p class="error" 
-                data-error-message="${download.title}: ${download.errorFlag}">
+                data-error-message="${entry.title}: ${entry.errorFlag}">
               There was a problem updating this item. You may not be getting the latest version.
             </p>`;
-  } else if (download.downloadingNewVersion) {
+  } else if (entry.downloadingNewVersion) {
     html += `<p class="error"
                 data-error-message="${
-                  download.title
+                  entry.title
                 }: Downloading new version...">
               A newer version is available but has not yet finished downloading.
             </p>`;
   }
-  html += `
-          <p>${download.description}</p>
-          <a class="download-button" href="${downloadsPath +
-            download.localFile}">
-            Download ${download.title} ${download.version}
-          </a>
-          </td>
+  html += `<p>${entry.description}</p>`;
+
+  if (entry.link) {
+    html += `<a class="download-button" href="${entry.link}" target="_blank">
+            Visit Site to Download ${entry.title}
+             </a>`;
+  } else {
+    html += `<a class="download-button" href="${downloadsPath +
+            entry.localFile}">
+            Download ${entry.title} ${entry.version}
+             </a>`;
+  }
+    html += `</td>
         </tr>
       </table>
     </div>`;
