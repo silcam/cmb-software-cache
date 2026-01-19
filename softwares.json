@@ -3,15 +3,7 @@
         "title": "Paratext",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
         "description": "Paratext 9 allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.",
-        "downloadPage": "https://paratext.org/download/currentVersion/",
-        "downloadPathPattern": "href=['\"]([^'\"]+InstallerOffline.exe)['\"]"
-    },
-    {
-        "title": "Paratext 9 Latest Patch",
-        "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
-        "description": "Run this if you already have Paratext 9 installed to update to the latest version.",
-        "downloadPage": "https://paratext.org/download/currentVersion/",
-        "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
+        "downloadPage": "https://paratext.org/download/offline-installer"
     },
     {
         "title": "LibreOffice",
@@ -65,9 +57,7 @@
         "title": "Keyman",
         "icon": "https://keyman.com/cdn/deploy/img/icon-developer.92f73c5226b1e921aab3b0f824ea8119.png",
         "description": "Makes it possible for you to type in over 1,000 languages on Windows, iPhone, iPad, Android tablets and phones, and even instantly in your web browser. Keyboards for specific languages can be found on the Keyman site and on scripts.sil.org.<br /><br />Note: for a completely offline install click \"Install Options\" before installing and disable \"Check For Updates Before Install\"",
-        "downloadPage": "https://keyman.com/desktop/download.php",
-        "downloadLinkPattern": "<div class=\"download-cta-big[^>]+?>",
-        "downloadPathPattern": "data-url='([^\"]+exe)'"
+        "downloadPage": "https://keyman.com/downloads/"
     },
     {
         "title": "Saymore",
@@ -86,12 +76,6 @@
         "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
         "description": "Enables linguists to be highly productive when building a lexicon and interlinearizing texts. Powerful bulk editing tools can save hours of work. FLEx allows control of which fields and entries show up in a dictionary publication. Through Pathway, beautiful dictionaries can be exported easily. Send/Receive Project allows users to collaborate with colleagues located anywhere.",
         "downloadPathPattern": "href=['\"]([^'\"]+Offline_x64.exe)['\"]"
-    },
-    {
-        "title": "FLEx 9 Latest Patch",
-        "icon": "https://software.sil.org/fieldworks/wp-content/uploads/sites/38/2016/06/FW-cube-80x80.png",
-        "description": "Run this once FLEx 9 is installed to get the latest patch for FLEx 9.",
-        "downloadPathPattern": "href=['\"]([^'\"]+msp)['\"]"
     },
     {
         "title": "SIL Transcriber",

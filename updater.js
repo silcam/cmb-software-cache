@@ -4,7 +4,7 @@ const downloader = require("./javascript/downloader");
 const downloadsInfo = require("./javascript/downloadsInfo");
 const htmlGenerator = require("./javascript/htmlGenerator");
 
-const specialRules = ["FLEx", "FLEx 9 Latest Patch", "LibreOffice", "LibreOffice Version Française"];
+const specialRules = ["FLEx", "LibreOffice", "LibreOffice Version Française", "Paratext"];
 
 /*
  * Notes on json files:
@@ -40,7 +40,6 @@ async function updateAllSoftware(softwares, downloads) {
         const html = await getHTML(software.downloadPage);
         downloadUrl = findDownloadPath(software, html);
       }
-
       const version = getVersionNumber(downloadUrl);
       if (version == download.version) {
         downloadsInfo.writeInfo(download.title, download);
@@ -68,6 +67,19 @@ async function getHTML(url) {
       responseType: "document"
     });
     return response.data;
+  });
+}
+
+async function getLocationHeader(url) {
+  return await tryAFewTimes(3, async () => {
+    const response = await axios.head(url, {
+      responseType: "document",
+      maxRedirects: 0,
+      validateStatus: function (status) {
+        return status == 301 || status == 302; // Look for a redirect.
+      },
+    });
+    return response.headers['location'];
   });
 }
 
@@ -119,12 +131,17 @@ async function downloadUrlForSpecialCases(software) {
   switch (software.title) {
     case "FLEx":
       return await downloadUrlFlex(software);
-    case "FLEx 9 Latest Patch":
-      return await downloadUrlFlex(software);
+    case "Paratext":
+      return await downloadUrlParatext(software);
     case "LibreOffice":
     case "LibreOffice Version Française":
       return await downloadUrlLibreOffice(software);
   }
+}
+
+async function downloadUrlParatext(software) {
+  const locationHeader = await getLocationHeader(software.downloadPage);
+  return locationHeader;
 }
 
 async function downloadUrlFlex(software) {
