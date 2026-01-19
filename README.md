@@ -40,8 +40,8 @@ If that doesn't work either, it is possible to specify an item as a special case
 
 ## Dependencies
 
-- Node
-- Yarn
+- Node 24
+- Yarn Berry
 
 ## Setup
 
