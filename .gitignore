@@ -3,3 +3,12 @@ downloads.json
 public/downloads
 public/index.html
 public/videos/*.m4v
+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
