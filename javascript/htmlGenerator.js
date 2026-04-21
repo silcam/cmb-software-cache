@@ -20,7 +20,7 @@ function htmlGenerator() {
           <h1>SIL CMB Software Downloads</h1>
           <p class="last-update">Updated ${lastUpdate}</p>
           <div>
-          <h3>For other useful apps at CMB, <a target="_new" href="http://itdocs.cmb.sil.org/index.php/Useful_Apps_at_CMB">click here.</a></h3>
+          <h3>For other useful apps at CMB, <a target="_new" href="http://192.168.0.158/research-index.html">click here.</a></h3>
           </div>`;
 
   /* TODO: there is no try in either of these, very much assumes they
