@@ -4,7 +4,7 @@ const downloader = require("./javascript/downloader");
 const downloadsInfo = require("./javascript/downloadsInfo");
 const htmlGenerator = require("./javascript/htmlGenerator");
 
-const specialRules = ["FLEx", "LibreOffice", "LibreOffice Version Française", "Paratext"];
+const specialRules = ["FLEx", "LibreOffice Version Française", "Paratext"];
 
 /*
  * Notes on json files:
