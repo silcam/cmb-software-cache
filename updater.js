@@ -74,7 +74,7 @@ async function getLocationHeader(url) {
   return await tryAFewTimes(3, async () => {
     const response = await axios.head(url, {
       responseType: "document",
-      maxRedirects: 0,
+      maxRedirects: 0, // follow no redirects
       validateStatus: function (status) {
         return status == 301 || status == 302; // Look for a redirect.
       },

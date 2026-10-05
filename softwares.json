@@ -3,7 +3,7 @@
         "title": "Paratext",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2017/06/icon_paratext.png",
         "description": "Paratext 9 allows you to input, edit, check, and publish a translation of the Scriptures, based on the original texts (Greek, Hebrew), and modeled on versions in major languages.",
-        "downloadPage": "https://paratext.org/download/offline-installer"
+        "downloadPage": "https://paratext.org/download/offline-installer/"
     },
     {
         "title": "LibreOffice",
@@ -15,7 +15,7 @@
         "title": "RAMP",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2025/03/RAMP-80px.png",
         "description": "The Resource and Metadata Packager (RAMP) is the preferred/recommended tool for describing, packaging, submitting, and managing resources archived in SIL’s Repository for Electronic Archiving and Publishing (REAP).",
-        "downloadPage": "https://ramp.sil.org/"
+        "downloadPage": "https://software.sil.org/ramp/"
     },
     {
         "title": "Audio Project Manager",

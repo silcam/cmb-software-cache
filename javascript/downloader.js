@@ -4,6 +4,7 @@ const downloadsInfo = require("./downloadsInfo");
 const htmlGenerator = require("./htmlGenerator");
 
 const downloadsPath = "public/downloads/";
+const uaString = "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.166 Safari/537.36"
 
 async function updateDownload(downloadInfo, url, newVersion) {
   downloadInfo.downloadingNewVersion = true;
@@ -35,6 +36,9 @@ async function downloadFile(url, filename) {
     url,
     directory: downloadsPath,
     fileName: filename,
+    headers: {
+      'User-Agent': uaString
+    }
   });
 
   await downloader.download();
