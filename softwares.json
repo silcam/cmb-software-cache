@@ -12,6 +12,13 @@
         "downloadPage": "https://www.libreoffice.org/download/?type=win-x86_64&lang=en"
     },
     {
+        "title": "Drive for Desktop",
+        "description": "Drive for Desktop",
+        "icon": "https://storage.googleapis.com/support-kms-prod/9oeXVucnKVDzkJF4mwD59H9qz6Y2lrNTkdoL",
+        "downloadPage": "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe",
+        "versionlessUpdateInterval": 604800
+    },
+    {
         "title": "RAMP",
         "icon": "https://software.sil.org/wp/wp-content/uploads/2025/03/RAMP-80px.png",
         "description": "The Resource and Metadata Packager (RAMP) is the preferred/recommended tool for describing, packaging, submitting, and managing resources archived in SIL’s Repository for Electronic Archiving and Publishing (REAP).",

@@ -29,24 +29,42 @@ async function updateAllSoftware(softwares, downloads) {
     const software = softwares[i];
 
     const download = updateAndGetDownloadConfig(downloads, software);
+    const currentTimestamp = Math.floor(Date.now() / 1000);
     download.errorFlag = null;
 
     console.log(`Processing ${software.title} at ${software.downloadPage}...`);
     try {
       let downloadUrl;
-      if (specialRules.includes(software.title)) {
+
+      if (software.downloadPage && software.downloadPage.endsWith(".exe")) {
+        // if the downloadPage ends with .exe, just attempt
+        // to download that.
+        downloadUrl = software.downloadPage;
+      } else if (specialRules.includes(software.title)) {
         downloadUrl = await downloadUrlForSpecialCases(software);
       } else {
         const html = await getHTML(software.downloadPage);
         downloadUrl = findDownloadPath(software, html);
       }
-      const version = getVersionNumber(downloadUrl);
-      if (version == download.version) {
+
+      let version = null;
+      if (software.versionlessUpdateInterval) {
+        // set the version to be interval in the future.
+        version = currentTimestamp + software.versionlessUpdateInterval;
+      } else {
+        version = getVersionNumber(downloadUrl);
+      }
+
+      if (software.versionlessUpdateInterval && currentTimestamp <= download.version || version == download.version) {
+        // the version doesn't need updating, don't download
         downloadsInfo.writeInfo(download.title, download);
       } else {
-        if (new RegExp("^/").test(downloadUrl))
+        // the version does need updating. download.
+        if (new RegExp("^/").test(downloadUrl)) {
+          // make relative URLs absolute.
           downloadUrl = new URL(downloadUrl, software.downloadPage).toString();
-          downloader.updateDownload(download, downloadUrl, version);
+        }
+        downloader.updateDownload(download, downloadUrl, version);
       }
     } catch (error) {
       console.error(error);
